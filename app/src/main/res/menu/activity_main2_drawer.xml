@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home page" />
+        <item
+            android:id="@+id/nav_studentProfile"
+            android:icon="@drawable/ic_account"
+            android:title="Student Profile" />
+        <item
+            android:id="@+id/nav_reserveRoom"
+            android:icon="@drawable/ic_glassdoor"
+            android:title="Reserve Room" />
+        <item
+            android:id="@+id/nav_borrowBook"
+            android:icon="@drawable/ic_book_open"
+            android:title="Borrow Book" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_phone_classic"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings"
+            android:title="Setting" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/icon_about"
+            android:title="About" />
+    </group>
+
+    <!--<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>-->
+
+</menu>

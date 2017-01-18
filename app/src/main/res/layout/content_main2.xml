@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.orangecoastcollege.cs273.nhoang53.occlibrary2.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackGround"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/occ_library_banner"
+        android:id="@+id/bannerImageView"
+        android:scaleType="fitXY"
+        android:layout_height="0dp"
+        android:layout_weight="3.9"
+        android:onClick="toggleShakeAnim" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="splashPrefs"
+        android:title="@string/welcome_screen"
+        android:summary="@string/welcome_screen_description"
+        android:switchTextOn="1"
+        android:checked="true"
+        android:persistent="true"/>
+
+</PreferenceScreen>

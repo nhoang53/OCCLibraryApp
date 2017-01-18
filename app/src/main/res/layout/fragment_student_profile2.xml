@@ -1,0 +1,352 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.orangecoastcollege.cs273.nhoang53.occlibrary2.fragments.StudentProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_student_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="edu.orangecoastcollege.cs273.nhoang53.occlibrary2.StudentProfileActivity"
+        android:orientation="vertical"
+        android:background="@color/colorBackGround"
+        android:weightSum="10"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/empty_background"
+            android:layout_weight="0.5"
+            android:layout_height="0dp">
+
+            <TextView
+                android:text="@string/student_information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView8"
+                android:textColor="@color/colorType"
+                android:textSize="18sp"
+                android:fontFamily="serif"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+
+            <TextView
+                android:text="id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView12"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/idTextView" />
+
+            <TextView
+                android:text="last name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView13"
+                android:layout_alignLeft="@+id/idTextView"
+                android:layout_alignStart="@+id/idTextView"
+                android:id="@+id/lastNameTextView" />
+
+            <TextView
+                android:text="@string/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="11dp"
+                android:id="@+id/textView9"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="@string/last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/textView12"
+                android:layout_below="@+id/textView9"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9" />
+
+            <TextView
+                android:text="@string/first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView13"
+                android:layout_below="@+id/textView12"
+                android:layout_alignLeft="@+id/textView12"
+                android:layout_alignStart="@+id/textView12" />
+
+            <TextView
+                android:text="first name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstNameTextView"
+                android:layout_alignBaseline="@+id/textView13"
+                android:layout_alignBottom="@+id/textView13"
+                android:layout_alignLeft="@+id/lastNameTextView"
+                android:layout_alignStart="@+id/lastNameTextView" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/empty_background"
+            android:layout_marginTop="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:text="@string/student_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:fontFamily="serif"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorType" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:text="@string/room_reserving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="27dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="14dp"
+                android:id="@+id/textView25" />
+
+            <TextView
+                android:text="@string/book_borrowing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView25"
+                android:layout_alignLeft="@+id/textView25"
+                android:layout_alignStart="@+id/textView25"
+                android:layout_marginTop="15dp"
+                android:id="@+id/textView26" />
+
+            <TextView
+                android:text="room#"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView25"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/roomReservingTextView" />
+
+            <TextView
+                android:text="book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView26"
+                android:layout_alignLeft="@+id/roomReservingTextView"
+                android:layout_alignStart="@+id/roomReservingTextView"
+                android:id="@+id/bookBorrowTextView" />
+
+            <Button
+                android:text="@string/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/roomReservingCancelButton"
+                android:textSize="12sp"
+                android:layout_marginRight="43dp"
+                android:layout_marginEnd="43dp"
+                android:layout_alignTop="@+id/roomReservingTextView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/bookBorrowTextView" />
+
+            <!--<Button
+                android:text="@string/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="43dp"
+                android:layout_marginEnd="43dp"
+                android:id="@+id/roomReservingCancelButton"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/roomReservingCancel"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/roomReservingCancel"
+                android:onClick="cancelRoomReserving" />-->
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/empty_background"
+            android:layout_marginTop="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:text="@string/change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView18"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:fontFamily="serif"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorType" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <TextView
+                android:text="@string/new_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:id="@+id/textView29"
+                android:layout_below="@+id/textView5"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_alignStart="@+id/textView5" />
+
+            <TextView
+                android:text="@string/confirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:id="@+id/textView30"
+                android:layout_below="@+id/textView29"
+                android:layout_alignLeft="@+id/textView29"
+                android:layout_alignStart="@+id/textView29" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:id="@+id/textView5"
+                android:text="@string/old_password"
+                android:layout_alignBottom="@+id/oldPasswordEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/confirmPasswordEditText"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:layout_alignBottom="@+id/textView30"
+                android:layout_alignLeft="@+id/newPasswordEditText"
+                android:layout_alignStart="@+id/newPasswordEditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/newPasswordEditText"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:layout_alignBottom="@+id/textView29"
+                android:layout_alignLeft="@+id/oldPasswordEditText"
+                android:layout_alignStart="@+id/oldPasswordEditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/oldPasswordEditText"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="13dp"
+                android:layout_marginEnd="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView5"
+                android:layout_toRightOf="@+id/textView29"
+                android:layout_toEndOf="@+id/textView29"
+                android:id="@+id/oldPasswordWrongTextView"
+                android:textColor="@color/colorLoginFail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView29"
+                android:layout_toStartOf="@+id/newPasswordEditText"
+                android:id="@+id/confirmPasswordWrongTextView"
+                android:layout_alignRight="@+id/resetButton"
+                android:layout_alignEnd="@+id/resetButton"
+                android:textColor="@color/colorLoginFail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="22dp"
+                android:id="@+id/alertTextView"
+                android:textColor="@color/colorLoginFail"
+                android:textSize="14sp"
+                android:textAlignment="textStart"
+                android:layout_below="@+id/textView30"
+                android:layout_alignLeft="@+id/resetButton"
+                android:layout_alignStart="@+id/resetButton" />
+
+            <Button
+                android:text="Reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resetButton"
+                android:onClick="reset"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/alertTextView"
+                android:layout_alignRight="@+id/textView30"
+                android:layout_alignEnd="@+id/textView30"
+                android:layout_marginTop="21dp" />
+
+            <Button
+                android:text="Save change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/savePasswordButton"
+                android:onClick="changePassword"
+                android:layout_alignBaseline="@+id/resetButton"
+                android:layout_alignBottom="@+id/resetButton"
+                android:layout_alignLeft="@+id/confirmPasswordEditText"
+                android:layout_alignStart="@+id/confirmPasswordEditText" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pick_time_period_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="edu.orangecoastcollege.cs273.nhoang53.occlibrary2.PickTimePeriodDetails"
+    android:weightSum="10"
+    android:background="@color/colorBackGround">
+
+    <TextView
+        android:text="@string/pick_time_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView51"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textColor="@color/title"
+        android:textStyle="normal|bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="@string/selected_date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/selectedRoomTextView"
+        android:layout_weight="1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="@string/selected_room_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/selectedDateTextView"
+        android:layout_weight="1"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:layout_weight="2">
+
+        <TextView
+            android:text="@string/ask_start_time_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/startTimeQuestionTextView"
+            android:layout_weight="7"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pickTimeSpinner"
+            android:layout_weight="3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/ask_hours_used_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/askHoursTextView"
+        android:layout_weight="1"
+        android:textAlignment="gravity"
+        android:gravity="bottom"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+
+        <TextView
+            android:text="00:30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarTextView"
+            android:textSize="18sp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hoursSeekBar"
+            android:layout_weight="8"
+            android:max = "150"
+            android:progress="0"
+            android:indeterminate="false"
+            android:layout_gravity="fill_horizontal" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showRoomBookingDetails" />
+
+</LinearLayout>

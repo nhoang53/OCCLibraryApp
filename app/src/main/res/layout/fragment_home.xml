@@ -1,0 +1,188 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.orangecoastcollege.cs273.nhoang53.occlibrary2.fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="edu.orangecoastcollege.cs273.nhoang53.occlibrary2.MainActivity"
+        android:orientation="vertical"
+        android:background="@color/colorBackGround"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/occ_library_banner"
+            android:id="@+id/bannerImageView"
+            android:scaleType="fitXY"
+            android:layout_height="0dp"
+            android:layout_weight="3.9"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="@string/not_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/notLoginTextView"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:typeface="serif"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:textStyle="normal|bold"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.7">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/student_profile2"
+                    android:id="@+id/studentProfileImageView"
+                    android:clickable="true"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/room"
+                    android:id="@+id/reserveRoomImageView"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7">
+
+                <TextView
+                    android:text="@string/student_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/studentProfileTextView"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorType"
+                    android:textSize="18sp"
+                    android:fontFamily="serif" />
+
+                <TextView
+                    android:text="@string/reserve_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reserveRoomTextView"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorType"
+                    android:textSize="18sp"
+                    android:fontFamily="serif" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="2.7"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/phone_icon1"
+                    android:id="@+id/contactImageView"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/book"
+                    android:id="@+id/borrowBookImageView"
+                    android:layout_weight="1"
+                    android:clickable="true" />
+
+                <!--<ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/book2"
+                    android:id="@+id/imageView8"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="borrowBook" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7">
+
+                <TextView
+                    android:text="@string/contact_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contactTextView"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorType"
+                    android:textSize="18sp"
+                    android:fontFamily="serif" />
+
+                <TextView
+                    android:text="@string/borrow_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/borrowBookTextView"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorType"
+                    android:textSize="18sp"
+                    android:fontFamily="serif" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
